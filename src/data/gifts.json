@@ -1,0 +1,218 @@
+[
+  {
+    "id": "1",
+    "title": "Liquidificador",
+    "category": "Cozinha",
+    "price": 250.00,
+    "description": "Para sucos, vitaminas e receitas práticas no dia a dia do casal.",
+    "icon": "Blender",
+    "image": "/images/gifts/gift_liquidificador.webp"
+  },
+  {
+    "id": "2",
+    "title": "Batedeira",
+    "category": "Cozinha",
+    "price": 430.00,
+    "description": "Para os bolos, massas e sobremesas deliciosas dos noivos.",
+    "icon": "Utensils",
+    "image": "/images/gifts/gift_batedeira.webp"
+  },
+  {
+    "id": "3",
+    "title": "Sanduicheira",
+    "category": "Cozinha",
+    "price": 150.00,
+    "description": "Para lanches rápidos e sanduíches quentinhos a qualquer hora.",
+    "icon": "Flame",
+    "image": "/images/gifts/gift_sanduicheira.webp"
+  },
+  {
+    "id": "4",
+    "title": "Microondas",
+    "category": "Cozinha",
+    "price": 500.00,
+    "description": "Praticidade e rapidez para aquecer e preparar refeições.",
+    "icon": "Cpu",
+    "image": "/images/gifts/gift_microondas.webp"
+  },
+  {
+    "id": "5",
+    "title": "Jogo de Jantar",
+    "category": "Cozinha",
+    "price": 230.00,
+    "description": "Para momentos especiais e jantares românticos à luz de velas.",
+    "icon": "UtensilsCrossed",
+    "image": "/images/gifts/gift_jogo_jantar.webp"
+  },
+  {
+    "id": "6",
+    "title": "Aspirador de Pó",
+    "category": "Cozinha",
+    "price": 380.00,
+    "description": "Para manter o novo lar sempre impecável e aconchegante.",
+    "icon": "Wind",
+    "image": "/images/gifts/gift_aspirador_po.webp"
+  },
+  {
+    "id": "7",
+    "title": "Jogo de Panelas",
+    "category": "Cozinha",
+    "price": 450.00,
+    "description": "Conjunto de panelas antiaderentes para os melhores pratos da casa.",
+    "icon": "Soup",
+    "image": "/images/gifts/gift_jogo_panela.jpg"
+  },
+  {
+    "id": "8",
+    "title": "Panificadora",
+    "category": "Cozinha",
+    "price": 480.00,
+    "description": "Para aquele cheirinho irresistível de pão quentinho pela manhã.",
+    "icon": "Croissant",
+    "image": "/images/gifts/gift_panificadora.jpg"
+  },
+  {
+    "id": "9",
+    "title": "Jogo de Xícara e Garrafa Térmica",
+    "category": "Cozinha",
+    "price": 180.00,
+    "description": "Para o café da manhã e café da tarde sempre quentinhos.",
+    "icon": "Coffee",
+    "image": "/images/gifts/gift_jogo_xicara.webp"
+  },
+  {
+    "id": "10",
+    "title": "Forno Elétrico",
+    "category": "Cozinha",
+    "price": 1700.00,
+    "description": "Para assados perfeitos, pizzas e receitas em família.",
+    "icon": "Box",
+    "image": "/images/gifts/gift_forno_eletrico.jpg"
+  },
+  {
+    "id": "11",
+    "title": "Multiprocessador",
+    "category": "Cozinha",
+    "price": 360.00,
+    "description": "O assistente multifuncional que agiliza todos os preparos culinários.",
+    "icon": "Zap",
+    "image": "/images/gifts/gift_multiprocessador.jpg"
+  },
+  {
+    "id": "12",
+    "title": "Jogo de Toalhas",
+    "category": "Cama, Mesa e Banho",
+    "price": 200.00,
+    "description": "Toalhas macias e felpudas para o conforto pós-banho.",
+    "icon": "Bath",
+    "image": "/images/gifts/gift_jogo_toalhas.webp"
+  },
+  {
+    "id": "13",
+    "title": "Jogo de Cama",
+    "category": "Cama, Mesa e Banho",
+    "price": 280.00,
+    "description": "Lençóis com toque acetinado para noites de sono restauradoras.",
+    "icon": "BedDouble",
+    "image": "/images/gifts/gift_jogo_cama.webp"
+  },
+  {
+    "id": "14",
+    "title": "Ferro de Passar",
+    "category": "Cama, Mesa e Banho",
+    "price": 170.00,
+    "description": "Para roupas sempre impecavelmente passadas e alinhadas.",
+    "icon": "Shirt",
+    "image": "/images/gifts/gift_ferro_passar.jpg"
+  },
+  {
+    "id": "15",
+    "title": "Passadeira a Vapor",
+    "category": "Cama, Mesa e Banho",
+    "price": 150.00,
+    "description": "Praticidade para desamassar tecidos delicados verticalmente.",
+    "icon": "Waves",
+    "image": "/images/gifts/gift_passadeira_vapor.webp"
+  },
+  {
+    "id": "16",
+    "title": "Tapete p/ Sala",
+    "category": "Cama, Mesa e Banho",
+    "price": 250.00,
+    "description": "Um toque de aconchego, sofisticação e conforto para a sala.",
+    "icon": "Maximize2",
+    "image": "/images/gifts/gift_tapete_sala.webp"
+  },
+  {
+    "id": "17",
+    "title": "Tábua de Passar Roupa",
+    "category": "Cama, Mesa e Banho",
+    "price": 179.00,
+    "description": "Estrutura firme e acolchoada para facilitar o cuidado das roupas.",
+    "icon": "Layers",
+    "image": "/images/gifts/gift_tabua_passar.jpg"
+  },
+  {
+    "id": "18",
+    "title": "Lava e Seca",
+    "category": "Cama, Mesa e Banho",
+    "price": 2800.00,
+    "description": "O grande sonho da vida a dois: roupas limpas, perfumadas e secas.",
+    "icon": "Sparkles",
+    "image": "/images/gifts/gift_lava_seca.jpg"
+  },
+  {
+    "id": "19",
+    "title": "Uma Lembrancinha",
+    "category": "Interativo",
+    "price": 100.00,
+    "description": "Um gesto carinhoso de amizade para marcar presença no nosso coração.",
+    "icon": "Gift",
+    "image": "/images/gifts/gift_lembrancinha.jpg"
+  },
+  {
+    "id": "20",
+    "title": "Camisa de Força p/ a Noiva Não Surtar",
+    "category": "Interativo",
+    "price": 430.00,
+    "description": "Item de sobrevivência indispensável na reta final dos preparativos!",
+    "icon": "Smile",
+    "image": "/images/gifts/gift_camisa_forca.jpg"
+  },
+  {
+    "id": "21",
+    "title": "Rivotril para os Noivos",
+    "category": "Interativo",
+    "price": 130.00,
+    "description": "Gotas milagrosas de serenidade para manter os batimentos cardíacos normais.",
+    "icon": "HeartHandshake",
+    "image": "/images/gifts/gift_rivotril.jpg"
+  },
+  {
+    "id": "22",
+    "title": "Cota p/ a Noiva Jogar o Buquê na sua Direção",
+    "category": "Interativo",
+    "price": 730.00,
+    "description": "Mira a laser e arremesso teleguiado direto nas suas mãos! O próximo é você!",
+    "icon": "Flower2",
+    "image": "/images/gifts/gift_buque_direcao.jpg"
+  },
+  {
+    "id": "23",
+    "title": "Cota p/ a Noiva NÃO Jogar o Buquê na sua Direção",
+    "category": "Interativo",
+    "price": 730.00,
+    "description": "Seguro anti-buquê! O arremesso será desviado 180 graus para longe de você.",
+    "icon": "ShieldAlert",
+    "image": "/images/gifts/gift_buque_desvio.jpg"
+  },
+  {
+    "id": "24",
+    "title": "Cota Açaí e Farinha de Bragança p/ Acalmar a Noiva",
+    "category": "Interativo",
+    "price": 300.00,
+    "description": "A melhor receita paraense para restabelecer a paz e a alegria no coração da noiva!",
+    "icon": "CupSoda",
+    "image": "/images/gifts/gift_acai_farinha.jpg"
+  }
+]

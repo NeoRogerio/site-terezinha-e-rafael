@@ -1,0 +1,62 @@
+{
+  "couple": {
+    "bride": "Terezinha",
+    "groom": "Rafael",
+    "title": "Terezinha & Rafael"
+  },
+  "event": {
+    "date": "2026-11-28",
+    "dateFormatted": "28 de Novembro de 2026",
+    "dayOfWeek": "Sábado"
+  },
+  "dressCode": {
+    "style": "Esporte Fino",
+    "description": "Para celebrar este momento único com elegância e bem-estar, o traje sugerido é Esporte Fino.",
+    "women": {
+      "rules": "Vestidos midi ou longos elegantes, macacões sofisticados ou conjuntos refinados.",
+      "avoid": [
+        {
+          "colorName": "Branco / Off-White",
+          "reason": "Exclusivo da Noiva (evite tons claros semelhantes)",
+          "hex": "#FFFFFF",
+          "border": "#CBD5E1"
+        },
+        {
+          "colorName": "Verde Oliva",
+          "reason": "Cor exclusiva das Madrinhas",
+          "hex": "#566443",
+          "border": "#3b462c"
+        },
+        {
+          "colorName": "Marsala & Rosê",
+          "reason": "Cores reservadas para as Mães dos noivos",
+          "hex": "#7A2A38",
+          "hexSecondary": "#C98791",
+          "border": "#5e1e2a"
+        }
+      ]
+    },
+    "men": {
+      "rules": "Camisa social, calça de alfaiataria ou sarja alinhada, blazer ou paletó (gravata opcional).",
+      "avoid": [
+        {
+          "colorName": "Terno Cinza",
+          "reason": "Exclusivo dos Padrinhos",
+          "hex": "#80878E",
+          "border": "#5A6168"
+        }
+      ]
+    }
+  },
+  "payment": {
+    "pixKey": "01176601245",
+    "pixKeyType": "Chave CPF",
+    "pixKeyFormatted": "011.766.012-45",
+    "recipientName": "TEREZINHA ALCIELY LIMA DA CONCEICAO",
+    "qrCodeImage": "/elementos/Qrcode-pix.svg"
+  },
+  "contact": {
+    "whatsappNumber": "5591984795514",
+    "whatsappFormatted": "(91) 98479-5514"
+  }
+}

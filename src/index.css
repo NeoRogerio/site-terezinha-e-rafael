@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'English111';
+  src: url('/elementos/English111.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('/elementos/Cinzel-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('/elementos/Cinzel-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: #566443 #FAFBF8;
+  scrollbar-width: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FAFBF8;
+  color: #2C2A29;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.font-script {
+  font-family: 'English111', 'Great Vibes', cursive;
+}
+
+.font-serif {
+  font-family: 'Cinzel', 'Playfair Display', serif;
+}
+
+/* Custom wedding scrollbar - Green & White Palette */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FAFBF8;
+}
+::-webkit-scrollbar-thumb {
+  background: #82916b;
+  border-radius: 5px;
+  border: 2px solid #FAFBF8;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #566443;
+}
