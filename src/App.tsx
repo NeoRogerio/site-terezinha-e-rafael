@@ -4,36 +4,95 @@ import { WeddingData } from './types/wedding';
 import { Header } from './components/Header';
 import { GuestManual } from './components/GuestManual';
 import { GiftList } from './components/GiftList';
+import { Home } from './components/Home';
 import { Footer } from './components/Footer';
 
 const weddingData: WeddingData = weddingDataRaw as WeddingData;
 
-export default function App() {
-  const [activeTab, setActiveTab] = useState<'manual' | 'gifts'>(() => {
-    if (typeof window !== 'undefined' && window.location.hash === '#presentes') {
-      return 'gifts';
-    }
+type ActiveTab = 'home' | 'manual' | 'gifts';
+
+const getInitialTab = (): ActiveTab => {
+  if (typeof window === 'undefined') return 'manual';
+
+  const hash = window.location.hash.toLowerCase();
+  const path = window.location.pathname.toLowerCase();
+
+  // 1. Preservar estritamente as rotas já existentes e em uso:
+  if (hash === '#presentes' || hash === '#/presentes') {
+    return 'gifts';
+  }
+  if (hash === '#manual' || hash === '#/manual') {
     return 'manual';
-  });
+  }
+
+  // 2. Rota /home solicitada (suporta /home, /home/, #home, #/home):
+  if (
+    path.endsWith('/home') ||
+    path.endsWith('/home/') ||
+    path.includes('/home') ||
+    hash === '#home' ||
+    hash === '#/home'
+  ) {
+    return 'home';
+  }
+
+  // 3. Fallback padrão seguro (mantém o manual como antes)
+  return 'manual';
+};
+
+export default function App() {
+  const [activeTab, setActiveTab] = useState<ActiveTab>(getInitialTab);
 
   useEffect(() => {
-    const handleHashChange = () => {
-      if (window.location.hash === '#presentes') {
+    const handleLocationChange = () => {
+      const hash = window.location.hash.toLowerCase();
+      const path = window.location.pathname.toLowerCase();
+
+      if (hash === '#presentes' || hash === '#/presentes') {
         setActiveTab('gifts');
-      } else if (window.location.hash === '#manual') {
+      } else if (hash === '#manual' || hash === '#/manual') {
         setActiveTab('manual');
+      } else if (
+        path.endsWith('/home') ||
+        path.endsWith('/home/') ||
+        path.includes('/home') ||
+        hash === '#home' ||
+        hash === '#/home'
+      ) {
+        setActiveTab('home');
       }
     };
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+
+    window.addEventListener('hashchange', handleLocationChange);
+    window.addEventListener('popstate', handleLocationChange);
+    return () => {
+      window.removeEventListener('hashchange', handleLocationChange);
+      window.removeEventListener('popstate', handleLocationChange);
+    };
   }, []);
 
-  const handleTabChange = (tab: 'manual' | 'gifts') => {
+  const handleTabChange = (tab: ActiveTab) => {
     setActiveTab(tab);
     if (typeof window !== 'undefined') {
-      window.location.hash = tab === 'gifts' ? 'presentes' : 'manual';
+      if (tab === 'gifts') {
+        window.location.hash = 'presentes';
+      } else if (tab === 'manual') {
+        window.location.hash = 'manual';
+      } else if (tab === 'home') {
+        window.location.hash = 'home';
+      }
     }
   };
+
+  // Se a rota for /home, renderizamos a experiência do convite digital baseada em Rayra e Rafael
+  if (activeTab === 'home') {
+    return (
+      <Home
+        weddingData={weddingData}
+        onNavigateToTab={(tab) => handleTabChange(tab)}
+      />
+    );
+  }
 
   return (
     <div className="min-h-screen bg-wedding-cream text-wedding-charcoal flex flex-col justify-between selection:bg-wedding-olive selection:text-white relative">

@@ -7,7 +7,20 @@
   "event": {
     "date": "2026-11-28",
     "dateFormatted": "28 de Novembro de 2026",
-    "dayOfWeek": "Sábado"
+    "dayOfWeek": "Sábado",
+    "locationName": "Igreja Matriz - Paróquia de São José",
+    "googleMapsUrl": "https://maps.app.goo.gl/tc8tHTHVsEagD2mC7",
+    "address": "Castanhal - PA"
+  },
+  "reception": {
+    "locationName": "Maison Domane",
+    "googleMapsUrl": "https://maps.app.goo.gl/YX22Lu6G4uC1Ncm97",
+    "address": "Castanhal - PA"
+  },
+  "rsvp": {
+    "whatsappNumber": "5591984795514",
+    "whatsappFormatted": "(91) 98479-5514",
+    "messageTemplate": "Olá! Gostaria de confirmar minha presença no casamento de Terezinha e Rafael."
   },
   "dressCode": {
     "style": "Esporte Fino",

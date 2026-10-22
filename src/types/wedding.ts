@@ -39,6 +39,22 @@ export interface WeddingData {
     date: string;
     dateFormatted: string;
     dayOfWeek: string;
+    time?: string;
+    timeFormatted?: string;
+    locationName?: string;
+    googleMapsUrl?: string;
+    address?: string;
+  };
+  reception?: {
+    locationName: string;
+    googleMapsUrl: string;
+    address: string;
+    timeFormatted?: string;
+  };
+  rsvp?: {
+    whatsappNumber: string;
+    whatsappFormatted: string;
+    messageTemplate?: string;
   };
   dressCode: DressCode;
   payment: {

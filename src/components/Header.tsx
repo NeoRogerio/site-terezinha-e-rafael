@@ -1,11 +1,11 @@
 import React from 'react';
 import { WeddingData } from '../types/wedding';
-import { BookOpen, Gift, Calendar } from 'lucide-react';
+import { BookOpen, Gift, Calendar, Home as HomeIcon } from 'lucide-react';
 
 interface HeaderProps {
   weddingData: WeddingData;
-  activeTab: 'manual' | 'gifts';
-  onTabChange: (tab: 'manual' | 'gifts') => void;
+  activeTab: 'home' | 'manual' | 'gifts';
+  onTabChange: (tab: 'home' | 'manual' | 'gifts') => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -46,21 +46,37 @@ export const Header: React.FC<HeaderProps> = ({
 
         {/* Tab Navigation Controls */}
         <nav className="pt-4 w-full flex justify-center sticky top-2 z-30">
-          <div className="inline-flex p-1.5 bg-white/95 backdrop-blur-md rounded-2xl border border-wedding-olive/25 shadow-wedding max-w-md w-full sm:w-auto">
+          <div className="inline-flex p-1.5 bg-white/95 backdrop-blur-md rounded-2xl border border-wedding-olive/25 shadow-wedding max-w-lg w-full sm:w-auto gap-1">
+            <button
+              id="tab-home-btn"
+              onClick={() => {
+                onTabChange('home');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className={`flex-1 sm:flex-initial px-3 sm:px-5 py-2.5 sm:py-3 rounded-xl font-serif text-xs sm:text-sm font-bold tracking-wider transition-all duration-300 flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer ${
+                activeTab === 'home'
+                  ? 'bg-wedding-olive text-white shadow-md'
+                  : 'text-wedding-muted hover:text-wedding-olive hover:bg-wedding-sage-tint'
+              }`}
+            >
+              <HomeIcon className={`w-4 h-4 ${activeTab === 'home' ? 'text-white' : 'text-wedding-olive'}`} />
+              <span>Início</span>
+            </button>
+
             <button
               id="tab-manual-btn"
               onClick={() => {
                 onTabChange('manual');
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
-              className={`flex-1 sm:flex-initial px-4 sm:px-6 py-3 rounded-xl font-serif text-xs sm:text-sm font-bold tracking-wider transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer ${
+              className={`flex-1 sm:flex-initial px-3 sm:px-5 py-2.5 sm:py-3 rounded-xl font-serif text-xs sm:text-sm font-bold tracking-wider transition-all duration-300 flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer ${
                 activeTab === 'manual'
                   ? 'bg-wedding-olive text-white shadow-md'
                   : 'text-wedding-muted hover:text-wedding-olive hover:bg-wedding-sage-tint'
               }`}
             >
               <BookOpen className={`w-4 h-4 ${activeTab === 'manual' ? 'text-white' : 'text-wedding-olive'}`} />
-              <span>Manual do Convidado</span>
+              <span>Manual</span>
             </button>
 
             <button
@@ -69,14 +85,14 @@ export const Header: React.FC<HeaderProps> = ({
                 onTabChange('gifts');
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
-              className={`flex-1 sm:flex-initial px-4 sm:px-6 py-3 rounded-xl font-serif text-xs sm:text-sm font-bold tracking-wider transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer ${
+              className={`flex-1 sm:flex-initial px-3 sm:px-5 py-2.5 sm:py-3 rounded-xl font-serif text-xs sm:text-sm font-bold tracking-wider transition-all duration-300 flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer ${
                 activeTab === 'gifts'
                   ? 'bg-wedding-olive text-white shadow-md'
                   : 'text-wedding-muted hover:text-wedding-olive hover:bg-wedding-sage-tint'
               }`}
             >
               <Gift className={`w-4 h-4 ${activeTab === 'gifts' ? 'text-white' : 'text-wedding-olive'}`} />
-              <span>Sugestão de Presentes</span>
+              <span>Presentes</span>
             </button>
           </div>
         </nav>
